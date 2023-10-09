@@ -244,13 +244,13 @@ class LatticeEnvironment(object):
             help="Size of valid and test samples",
         )
         parser.add_argument(
-            "--operation", type=str, default="circ_rlwe", help="Operation performed"
+            "--operation", type=str, default="modular_multiply", help="Operation performed"
         )
         parser.add_argument(
             "--generator", type=str, default="uniform", help="Random generation of coefficients"
         )
         parser.add_argument(
-            "--N", type=int, default=50, help="dimension of matrix"
+            "--N", type=int, default=30, help="dimension of matrix"
         )
         parser.add_argument(
             "--Q", type=int, default=251, help="modulo"
