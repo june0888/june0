@@ -31,7 +31,6 @@ class ModularMultiply(Generator):
         self.Q = params.Q
         self.S = secret
         self.N = params.N
-        assert len(self.S) == self.N
 
     def generate(self, rng):
         a = rng.randint(0, self.Q, self.N)
